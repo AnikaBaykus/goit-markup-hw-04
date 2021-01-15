@@ -288,6 +288,7 @@ p {
   background-color: var(--secondary-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px;
   border-radius: 4px;
 }
 
