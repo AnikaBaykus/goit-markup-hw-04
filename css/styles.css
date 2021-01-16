@@ -10,6 +10,8 @@
   --secondary-color: #f5f4fa;
   --border-color: rgba(238, 238, 238, 1);
   --bg-color-caption: #c4c4c4;
+  --icon-color: #afb1b8;
+  --icon-bg-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -103,6 +105,25 @@ p {
   color: var(--accent-text-color);
 }
 
+.contacts-header .link {
+  display: flex;
+  padding-top: 32px;
+}
+.nav-icon {
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 32px;
+}
+
+.nav-icon svg {
+  fill: currentColor;
+}
+
+.before-icon {
+  padding-left: 10px;
+}
+
 /* ---Контакты--- */
 .contacts-header {
   display: flex;
@@ -166,6 +187,10 @@ p {
   color: var(--accent-text-color);
 }
 
+.footer-icons-list {
+  display: flex;
+}
+
 .button {
   display: inline-block;
   border: 1px solid transparent;
@@ -198,6 +223,61 @@ p {
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
+
+.footer-wrap {
+  display: flex;
+}
+
+.footer-link {
+  width: 231px;
+}
+.footer-social {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+.text-footer {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  color: var(--page-color);
+}
+
+.footer-icons-list {
+  justify-content: space-between;
+  margin: auto;
+
+  width: 206px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--icon-bg-footer);
+  border-radius: 50%;
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+  background-color: var(--accent-text-color);
+}
+
+.footer-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--page-color);
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -279,37 +359,21 @@ p {
   width: 270px;
 }
 
-.about-item::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
-  height: 120px;
-
-  background-color: var(--secondary-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
-  border-radius: 4px;
-}
-
-.about-item.icon-antenna::before {
-  background-image: url('../img/icon-antenna.svg');
-}
-
-.about-item.icon-clock::before {
-  background-image: url('../img/icon-clock.svg');
-}
-
-.about-item.icon-diagram::before {
-  background-image: url('../img/icon-diagram.svg');
-}
-
-.about-item.icon-astronaut::before {
-  background-image: url('../img/icon-astronaut.svg');
-}
-
 .about-item:not(:last-child) {
   margin-right: 30px;
+}
+.about-icons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+.about-img {
+  width: 70px;
+  height: 70px;
 }
 
 .about-title {
@@ -372,6 +436,7 @@ p {
 }
 
 .team-profession {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 
   font-size: 16px;
@@ -379,12 +444,73 @@ p {
   text-align: center;
 }
 
-/* Постоянные клиенты */
+.icons-list {
+  justify-content: space-between;
+  margin: auto;
 
-.clients ul {
+  width: 206px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--page-color);
+  border-radius: 50%;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--accent-text-color);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.social-icons:hover svg,
+.social-icons:focus svg {
+  fill: var(--page-color);
+}
+
+/* Постоянные клиенты */
+.clients-logo {
   display: flex;
   justify-content: space-between;
 }
+
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 170px;
+  height: 90px;
+
+  background-color: var(--page-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-icon:hover {
+  border-color: var(--accent-text-color);
+}
+.clients-icon svg {
+  fill: var(--icon-color);
+}
+
+.clients-icon:hover svg {
+  fill: var(--accent-text-color);
+}
+
 /* ========/index.html======== */
 /* ======= Стили portfolio.html ====== */
 
@@ -444,6 +570,13 @@ p {
 .product-window:nth-child(-n + 3) {
   margin-top: 0;
 }
+
+.product-window .link:hover,
+.product-window .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .product-image {
   display: block;
   max-width: 100%;
