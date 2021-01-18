@@ -110,13 +110,10 @@ p {
   padding-top: 32px;
 }
 .nav-icon {
+  padding-bottom: 32px;
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 32px;
-}
-
-.nav-icon svg {
   fill: currentColor;
 }
 
@@ -226,16 +223,17 @@ p {
 
 .footer-wrap {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-link {
   width: 231px;
 }
+
 .footer-social {
   width: 206px;
   height: 80px;
   margin-left: 70px;
-  margin-top: 15px;
 }
 
 .text-footer {
@@ -264,6 +262,7 @@ p {
   height: 44px;
 
   background-color: var(--icon-bg-footer);
+  fill: var(--page-color);
   border-radius: 50%;
 }
 
@@ -275,7 +274,6 @@ p {
 .footer-icons svg {
   width: 20px;
   height: 20px;
-  fill: var(--page-color);
 }
 
 .container {
@@ -342,6 +340,7 @@ p {
   color: var(--page-color);
   background-color: var(--accent-text-color);
   border-color: var(--accent-text-color);
+  cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
@@ -461,23 +460,19 @@ p {
   height: 44px;
 
   background-color: var(--page-color);
+  fill: var(--icon-color);
   border-radius: 50%;
 }
 
 .social-icons:hover,
 .social-icons:focus {
   background-color: var(--accent-text-color);
+  fill: var(--page-color);
 }
 
 .social-icons svg {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
-}
-
-.social-icons:hover svg,
-.social-icons:focus svg {
-  fill: var(--page-color);
 }
 
 /* Постоянные клиенты */
@@ -496,18 +491,14 @@ p {
   height: 90px;
 
   background-color: var(--page-color);
+  fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
   border-color: var(--accent-text-color);
-}
-.clients-icon svg {
-  fill: var(--icon-color);
-}
-
-.clients-icon:hover svg {
   fill: var(--accent-text-color);
 }
 
@@ -532,6 +523,7 @@ p {
   color: var(--main-text-color);
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -546,6 +538,8 @@ p {
   color: var(--page-color);
   background-color: var(--accent-text-color);
   border-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Портфолио продукты */
 
