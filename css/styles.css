@@ -105,22 +105,6 @@ p {
   color: var(--accent-text-color);
 }
 
-.contacts-header .link {
-  display: flex;
-  padding-top: 32px;
-}
-.nav-icon {
-  padding-bottom: 32px;
-  justify-content: center;
-  align-items: center;
-
-  fill: currentColor;
-}
-
-.before-icon {
-  padding-left: 10px;
-}
-
 /* ---Контакты--- */
 .contacts-header {
   display: flex;
@@ -146,6 +130,28 @@ p {
 .contacts-header .link:hover,
 .contacts-header .link:focus {
   color: var(--accent-text-color);
+}
+.nav-icon {
+  padding-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+
+  fill: currentColor;
+}
+
+.mail-icon svg {
+  width: 16px;
+  height: 12px;
+}
+
+.tel-icon svg {
+  width: 10px;
+  height: 12px;
+}
+
+.mail-icon,
+.tel-icon {
+  padding-right: 10px;
 }
 
 .footer .logo {
@@ -445,9 +451,8 @@ p {
 
 .icons-list {
   justify-content: space-between;
-  margin: auto;
-
-  width: 206px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .social-icons {
