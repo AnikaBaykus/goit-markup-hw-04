@@ -15,13 +15,13 @@
 }
 
 body {
-  background-color: var(--page-color);
-  color: var(--main-text-color);
-
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  background-color: var(--page-color);
+  color: var(--main-text-color);
 }
 
 .list {
@@ -40,19 +40,22 @@ p {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  overflow: hidden;
 }
 /* ---Логотип ВебСтудии--- */
 .logo {
-  color: var(--accent-text-color);
-
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  color: var(--accent-text-color);
 }
 
 .logo .dark {
@@ -66,6 +69,7 @@ p {
 /* ---Навигация по сайту--- */
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -89,11 +93,11 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--main-text-color);
-
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--main-text-color);
 }
 
 .site-nav .link.current {
@@ -108,6 +112,7 @@ p {
 /* ---Контакты--- */
 .contacts-header {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -120,11 +125,11 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--secondary-text-color);
-
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--secondary-text-color);
 }
 
 .contacts-header .link:hover,
@@ -132,9 +137,9 @@ p {
   color: var(--accent-text-color);
 }
 .nav-icon {
-  padding-bottom: 32px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 32px;
 
   fill: currentColor;
 }
@@ -166,19 +171,21 @@ p {
 
 .map .link {
   display: flex;
-  color: var(--page-color);
 
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+
+  color: var(--page-color);
 }
 
 .contacts-footer .link {
   display: flex;
-  color: var(--contacts-text-color);
 
   line-height: 1.71;
   text-decoration: none;
+
+  color: var(--contacts-text-color);
 }
 
 .contacts-footer li:not(:last-child) {
@@ -196,16 +203,16 @@ p {
 
 .button {
   display: inline-block;
-  border: 1px solid transparent;
-  border-radius: 4px;
   padding: 0;
-
-  color: inherit;
-  background-color: transparent;
 
   font-family: inherit;
   text-decoration: none;
   text-align: center;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: inherit;
+  background-color: transparent;
 }
 
 .title {
@@ -224,6 +231,7 @@ p {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: var(--footer-color);
 }
 
@@ -254,7 +262,6 @@ p {
 .footer-icons-list {
   justify-content: space-between;
   margin: auto;
-
   width: 206px;
 }
 
@@ -263,7 +270,6 @@ p {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-
   width: 44px;
   height: 44px;
 
@@ -288,7 +294,6 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 .wrap {
@@ -321,21 +326,22 @@ p {
   background-position: center;
   background-size: cover;
 }
+
 .caption-hero {
-  max-width: 696px;
   text-align: center;
+  max-width: 696px;
 }
 
 .caption-text {
   margin-bottom: 30px;
-
-  color: var(--page-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+
+  color: var(--page-color);
 }
 
 /* Главная кнопка */
@@ -343,15 +349,15 @@ p {
   padding: 10px 32px;
   min-width: 200px;
 
-  color: var(--page-color);
-  background-color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
-  cursor: pointer;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  color: var(--page-color);
+  background-color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 /* ---О нас--- */
@@ -372,7 +378,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 270px;
   height: 120px;
+
   background-color: var(--secondary-color);
   border-radius: 4px;
 }
@@ -389,9 +397,9 @@ p {
 }
 
 .about-text {
-  color: var(--secondary-text-color);
-
   line-height: 1.71;
+
+  color: var(--secondary-text-color);
 }
 /* ---Чем мы занимаемся--- */
 .job ul {
@@ -415,8 +423,6 @@ p {
 
 .team-window {
   background-color: var(--page-color);
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -425,6 +431,8 @@ p {
 .team-item {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-photo {
@@ -442,17 +450,16 @@ p {
 
 .team-profession {
   margin-bottom: 16px;
-  color: var(--secondary-text-color);
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  color: var(--secondary-text-color);
 }
 
 .icons-list {
   justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .social-icons {
@@ -460,7 +467,6 @@ p {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-
   width: 44px;
   height: 44px;
 
@@ -486,14 +492,17 @@ p {
   justify-content: space-between;
 }
 
-.clients-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-
+.clients-company {
   width: 170px;
   height: 90px;
+}
+
+.clients-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 
   background-color: var(--page-color);
   fill: var(--icon-color);
@@ -524,18 +533,17 @@ p {
 
 .product .button {
   display: block;
-
-  color: var(--main-text-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-  cursor: pointer;
+  padding: 6px 22px;
+  min-width: 73px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
 
-  padding: 6px 22px;
-  min-width: 73px;
+  color: var(--main-text-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .product .button:hover,
@@ -558,6 +566,7 @@ p {
   margin-right: 30px;
   margin-top: 30px;
   max-width: 370px;
+
   background-color: var(--page-color);
   outline-color: var(--border-color);
   outline-width: 1px;
@@ -587,8 +596,9 @@ p {
 }
 
 .product .link {
-  color: var(--main-text-color);
   text-decoration: none;
+
+  color: var(--main-text-color);
 }
 
 .product-text {
@@ -601,9 +611,9 @@ p {
 }
 
 .product-work {
-  color: var(--secondary-text-color);
-
   font-size: 16px;
   line-height: 1.87;
+
+  color: var(--secondary-text-color);
 }
 /* =======/portfolio.html====== */ ;
